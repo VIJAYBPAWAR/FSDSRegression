@@ -11,6 +11,7 @@ def get_requirements(file_path:str)->List[str]:
 
         if HYPEN_E_DOT in requirements:
             requirements.remove(HYPEN_E_DOT)
+    return requirements
 
 
 setup(
@@ -20,7 +21,4 @@ setup(
     author_email='vijaypawar908@gmail.com',
     install_requires=get_requirements('requirements.txt'),
     package=find_packages()
-
-
-
 )
